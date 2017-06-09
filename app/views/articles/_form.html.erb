@@ -1,5 +1,5 @@
 
-<%= form_for :article, url: articles_path do |f| %>
+<%= form_for @article do |f| %>
  
   <% if @article.errors.any? %>
     <div id="error_explanation">
@@ -30,5 +30,3 @@
   </p>
  
 <% end %>
- 
-<%= link_to 'Back', articles_path %>
